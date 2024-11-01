@@ -25,7 +25,7 @@ jobs:
         id: changed-files
         with:
           files: "**/*.txt"
-        uses: tj-actions/changed-files@v34
+        uses: tj-actions/changed-files@v41
       - name: Analyze all added or modified files
         run: |
           ./.bin/validators.sh "${{ steps.changed-files.outputs.all_changed_files }}"
